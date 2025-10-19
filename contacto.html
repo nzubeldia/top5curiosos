@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Top 5</title>
+        <!-- Enlace a la hoja de estilos principal -->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <!-- Cabecera del sitio con logotipo y título principal -->
+        <header>
+            <img class="logo" src="multimedia/header_principal.png" alt="Logo principal"/>
+            <h1>¡Los top 5 más curiosos!</h1>
+            <img class="logo" src="multimedia/header_principal.png" alt="Logo principal"/>
+        </header>
+
+        <!-- Menú de navegación principal -->
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal dividido en columna izquierda (redes) y columna derecha (formulario) -->
+        <main>
+            <!-- Columna izquierda: enlaces a redes sociales con iconos -->
+            <section class="col-izquierda categorias-y-redes">
+                <h4>Redes sociales</h4>
+                <a href="https://www.instagram.com/doctopsoficial/?hl=es" target="blank">
+                    <img class="img-redes" src="multimedia/instagram_logo.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/channel/UCAolsolgHiURrQBuZ4qe0lg" target="blank">
+                    <img class="img-redes" src="multimedia/youtube_logo.png" alt="YouTube">
+                </a>
+                <a href="https://x.com/doctops15?lang=es" target="blank">
+                    <img class="img-redes" src="multimedia/x_logo.png" alt="X">
+                </a>
+                <a href="https://www.facebook.com/DocTops" target="blank">
+                    <img class="img-redes" src="multimedia/facebook_logo.png" alt="Facebook">
+                </a>
+            </section>
+
+            <!-- Columna derecha: formulario de contacto -->
+            <section class="col-derecha informacion-pagina">
+                <form action="mailto:zubeldianerea@gmail.com" method="post">
+                    <!-- Título del formulario -->
+                    <legend><h4>Formulario de contacto</h4></legend>
+
+                    <!-- Campos del formulario -->
+                    <label>Nombre:</label>
+                    <input type="text" id="fnamenom1" name="nombre1">
+                    <br><br>
+
+                    <label>Apellidos:</label>
+                    <input type="text" id="fnameapel1" name="apellido1">
+                    <br><br>
+
+                    <label>Correo electrónico:</label>
+                    <input type="email" id="femail1" name="email1">
+                    <br><br>
+
+                    <label>Teléfono:</label>
+                    <input type="tel" id="fphone1" name="phone1">
+                    <br><br>
+
+                    <label>Motivo de contacto:</label>
+                    <select id="fmotivo1" name="motivo1">
+                        <option value="">--Selecciona un motivo--</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <br><br>
+
+                    <label>Mensaje:</label>
+                    <br>
+                    <textarea id="fmessage1" name="message1" rows="4" cols="50"></textarea>
+
+                    <!-- Botón para enviar el formulario -->
+                    <input type="submit" value="Enviar" class="boton-enviar">
+                </form>
+            </section>
+        </main>
+
+        <!-- Pie de página con información de derechos y licencia -->
+        <footer>
+            <p>La obra "Top 5 curiosos" de Nerea Zubeldia Irastorza está bajo una 
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.es" target="blank">
+                Licencia Creative Commons Atribución-NoComercial 4.0 Internacional
+            </a>.
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.es" target="blank">
+            <img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png">
+            </a>. Año de publicación: 2025.
+            </p>
+        </footer>
+    </body>
+</html>

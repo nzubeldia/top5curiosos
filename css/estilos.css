@@ -1,0 +1,289 @@
+/* Estilos generales de la página */
+body {
+    background-color: rgb(247, 68, 208);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Cabecera centrada */
+header {
+    align-items:center;  
+    text-align: center;
+}
+
+/* Flexbox general aplicado a varias secciones */
+header, .navigation, main, .destacado, footer, .col-derecha, .col-izquierda, .multimedia-top, .unica-columna-main, .unica-columna-main article {
+    display: flex;
+}
+
+/* Distribución de espacio en cabecera, navegación y footer */
+header, .navigation, footer {
+    justify-content: space-between;
+}
+
+/* Estilo visual de header y footer */
+header, footer {
+    border: 0.25rem solid rgb(112, 25, 93);
+    border-style: dotted;
+    background-color: rgb(243, 184, 230);
+    color: rgb(112, 25, 93);
+}
+
+/* Tamaño de títulos */
+h1 {
+    font-size: 3.25rem;
+    left: 10rem;
+}
+
+h1, h4 {
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.35rem;
+}
+
+/* Tamaño de párrafos y navegación */
+p, .navigation {
+    font-size: 1.25rem;
+}
+
+/* Margen para elementos principales */
+.logo, .categorias-y-redes, .introduccion, .multimedia-top, .unica-columna-main, .unica-columna-main article {
+    margin: 1rem;
+}
+
+/* Logo tamaño */
+.logo{
+    width: 30%;
+}
+
+/* Navegación: flex-wrap y estilo de lista */
+.navigation {
+    flex-wrap: wrap; 
+    list-style: none;
+    padding: 0.5rem;
+}
+
+/* Estilo de los elementos de lista del nav */
+nav li {
+    border: 0.15rem solid rgb(63, 51, 26);
+    border-radius: 1rem;
+    padding: 0.5rem 7.5rem;
+    background-color: rgb(63, 51, 26);
+    margin: 0.25rem;
+}
+
+/* Enlaces del nav: color y decoración */
+nav a {
+    text-decoration: none;  
+    color: rgb(230,240,250);
+}
+
+nav a:visited, nav a:active {
+    color: rgb(241, 225, 191);
+}
+
+nav a:hover {
+    color: rgb(168, 128, 40);
+}
+
+/* Contenedor principal: alineación y dirección de flex */
+main {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+/* Ancho de secciones y multimedia */
+.categorias-y-redes, .introduccion, .destacado, .multimedia-top, .unica-columna-main, .multimedia-top img {
+    width: 100%;
+}
+
+/* Bordes redondeados para varias secciones */
+.categorias-y-redes, .introduccion, .destacado, .multimedia-top, .informacion-pagina, .unica-columna-main, .unica-columna-main article {
+    border-radius: 2rem;
+}
+
+/* Bordes de destacado y multimedia-top */
+.destacado, .multimedia-top {
+    border: 1rem solid rgb(202, 181, 89);
+}
+
+/* Color de enlaces en destacado y multimedia */
+.destacado, .multimedia-top, .destacado a, .destacado a:visited, .destacado a:active {
+    color: rgb(66, 59, 30);
+}
+
+/* Fondo de varias secciones */
+.destacado, .multimedia-top, .categorias-y-redes, .introduccion, .multimedia-top, .informacion-pagina, .unica-columna-main, .unica-columna-main article {
+    background-color: rgb(241, 232, 195);
+}
+
+/* Color de texto general en artículos y enlaces */
+.introduccion, .informacion-pagina, .unica-columna-main, .unica-columna-main article, .unica-columna-main a,
+.unica-columna-main a:visited, .unica-columna-main a:active {
+    color: rgb(54, 66, 30);
+}
+
+/* Hover en enlaces de destacado */
+.destacado a:hover {
+    color: rgb(193, 171, 86);
+}
+
+/* Padding interno de secciones */
+.categorias-y-redes, .introduccion, footer, .multimedia-top, .informacion-pagina, .unica-columna-main {
+    padding: 0.25rem 2rem;
+}
+
+/* Categorías con borde y color */
+.categorias-y-redes {
+    border: 1rem solid rgb(126, 158, 165);
+    color: rgb(31, 24, 111);
+    padding-bottom: 2rem;
+}
+
+/* Imágenes de categorías y redes sociales */
+.img-categorias{
+    width: 80%;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.img-redes {
+    width: 20%;
+}
+
+/* Introducción con borde */
+.introduccion {
+    border: 1rem solid rgb(145,178,80);
+}
+
+/* Flex general */
+.flex {
+    display: flex;
+}
+
+/* Ajuste de artículo dentro de introducción */
+.introduccion article {
+    text-align: justify;
+    padding-top: 0;
+    width: 65%;
+    padding-right: 1.5rem;
+}
+
+/* Imagen dentro de introducción */
+.img-introduccion {
+    width: 35%;
+    height: fit-content;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+/* Destacado con padding y margin */
+.destacado {
+    position: relative;
+    padding: 0.25rem 2rem 2.5rem 2rem;
+    margin: 1rem 0 1rem 1rem;
+    text-align: justify;
+}
+
+/* Margen del footer */
+footer {
+    margin: 1rem 0 0 0.5rem;
+}
+
+/* Columna derecha */
+.col-derecha {
+    flex-direction: column;
+    width: 55%;
+}
+
+/* Columna izquierda con separación entre elementos */
+.col-izquierda {
+    flex-direction: column;
+    width: 25%;
+    gap: 1rem;
+}
+
+/* Clase para texto en negrita */
+.negrita {
+    font-weight: bold;
+}
+
+/* Lista justificada */
+ul li {
+    text-align: justify;
+}
+
+/* Multimedia-top con dirección column */
+.multimedia-top {
+    flex-direction: column;
+}
+
+/* Imagen de multimedia-top */
+.multimedia-top img {
+    height: fit-content;
+}
+
+/* Información de página */
+.informacion-pagina {
+    border: 1rem solid rgb(145,178,80);
+    margin: 1rem 0 0 1rem;
+    padding-bottom: 2rem;
+    width: 55%;
+}
+
+/* Estilo de columna única en el main */
+.unica-columna-main {
+    flex-direction: column;
+    border: 1rem solid rgb(145,178,80);
+}
+
+/* Artículos dentro de sección única */
+.unica-columna-main article {
+    border: 0.5rem solid rgb(54, 66, 30);
+    padding: 0 1rem;
+    width: 95%;
+    text-align: justify;
+}
+
+/* Posición absoluta de enlaces en artículos de columna única */
+.unica-columna-main p a {
+    position: absolute;
+    padding-right: 3.5rem;
+}
+
+/* Imágenes en columna única */
+.unica-columna-main img {
+    width: 25%;
+    height: fit-content;
+    padding: 1rem;
+}
+
+/* Estilo general de enlaces */
+.unica-columna-main a, .destacado a {
+    right: 3rem;
+    text-decoration: none;
+}
+
+/* Posición absoluta de enlaces en destacado */
+.destacado a {
+    position: absolute;
+}
+
+/* Hover en enlaces de columna única */
+.unica-columna-main a:hover {
+    color: rgb(145,178,80);
+}
+
+/* Botón enviar en formulario */
+.boton-enviar {
+    float: right;
+}
+
+/* Margen izquierdo */
+.margen-izq {
+    margin-left: 9rem;
+}
