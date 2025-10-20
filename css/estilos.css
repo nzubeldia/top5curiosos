@@ -1,3 +1,13 @@
+/*
+· Autor: Nerea Zubeldia Irastorza
+· Asignatura: Lenguaje de marcas y Sistemas de gestión de la información
+· Unidad: UD02
+· Tarea: Tarea evaluativa 2: Sitio web
+· Documento reflexión: https://docs.google.com/document/d/1kxTZL3bg8wFiO1VXw1Ibk_I1L7AXnYoN-iZSCvvhBL4/edit?tab=t.0 
+· Enlace de internet del sitio web (publicado mediante GitHub Pages): https://nzubeldia.github.io/top5curiosos/
+· Fecha: 20/10/2025
+*/
+
 /* Estilos generales de la página */
 body {
     background-color: rgb(247, 68, 208);
@@ -79,16 +89,18 @@ nav li {
 
 /* Enlaces del nav: color y decoración */
 nav a {
-    text-decoration: none;  
+    text-decoration: none;  /* Quita subrayado de los enlaces */
     color: rgb(230,240,250);
 }
 
+/* Mantener el color de los enlaces visitados y activos */
 nav a:visited, nav a:active {
-    color: rgb(241, 225, 191);
+    color: rgb(241, 225, 191); 
 }
 
+/* Cambiar color al pasar el mouse */
 nav a:hover {
-    color: rgb(168, 128, 40);
+    color: rgb(168, 128, 40);   
 }
 
 /* Contenedor principal: alineación y dirección de flex */
